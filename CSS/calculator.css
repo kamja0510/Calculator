@@ -1,0 +1,54 @@
+@import "reset.css";
+
+*{
+    box-sizing : border-box;            /* 박스 사이즈를 테두리까지 포함해서 정함. */
+}
+
+body{
+    height : 100vh;
+    display : flex;
+    flex-direction : column;
+    align-items : center;               /* 교차축에 대해 정렬 */
+    justify-content : center;           /* 주축에 대해 정렬 */
+}
+
+#frame{
+    width : 300px;
+    display : flex;
+    flex-direction : column;
+    align-items : end;
+}
+
+#mini__screen{
+    width : 250px;
+    height : 35px;
+    padding : 10px 0;
+    border : 2px solid black;
+    border-bottom: 0px;
+    text-align : end;
+    font-size : 15px;
+    
+}
+
+#screen{
+    width : 300px;
+    height : 65px;
+    padding : 10px;
+    margin-left : 5px;
+    border : 2px solid black;
+    text-align : end;
+    font-size : 41px;
+}
+
+.row{                                   /* 이 컨테이너의 높이는 자식 요소 중 가장 큰 높이를 가진다. */
+    margin-left : 5px;
+    margin-top : 10px;
+    width : 300px;
+    display : flex;
+    justify-content : space-between;    /* 박스들을 좌우로 꽉꽉 채워서 마진을 주면서 정렬 */
+}
+
+.box{
+    width : 60px;
+    height : 60px;
+}
